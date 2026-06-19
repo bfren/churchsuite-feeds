@@ -1,6 +1,6 @@
 <?php
 
-namespace Obadiah\Prayer;
+namespace Obadiah\AddressBook;
 
 use Obadiah\App;
 
@@ -11,13 +11,15 @@ class Person
     /**
      * Create Person object.
      *
-     * @param string $first_name        Person's first name.
-     * @param string $last_name         Person's last name.
+     * @param int $id                   ChurchSuite ID.
+     * @param string $first_name        First name.
+     * @param string $last_name         Last name.
      * @param bool $is_child            Whether or not this person is a child.
      * @param ?string $image_url        Optional URL to the person's photo (if they have uploaded one).
      * @return void
      */
     public function __construct(
+        public readonly int $id,
         public readonly string $first_name,
         public readonly string $last_name,
         public readonly bool $is_child,

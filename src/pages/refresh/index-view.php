@@ -3,12 +3,12 @@
 namespace Obadiah\Pages\Refresh;
 
 use Obadiah\App;
+use Obadiah\AddressBook\Person;
 use Obadiah\Cache\Cache;
 use Obadiah\Config\Config as C;
 use Obadiah\Helpers\Image;
 use Obadiah\Helpers\Psalms;
 use Obadiah\Pages\Parts\Header\Header_Model;
-use Obadiah\Prayer\Person;
 use Obadiah\Request\Request;
 use Obadiah\Response\View;
 

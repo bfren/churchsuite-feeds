@@ -3,6 +3,7 @@
 namespace Obadiah\Cache;
 
 use Obadiah\App;
+use Obadiah\AddressBook\Person;
 use Obadiah\Bible\Bible_Plan;
 use Obadiah\Calendar\Event;
 use Obadiah\ChurchSuite\Api;
@@ -10,9 +11,7 @@ use Obadiah\Helpers\Hash;
 use Obadiah\Helpers\IO;
 use Obadiah\Helpers\Serialise;
 use Obadiah\Lectionary\Lectionary;
-use Obadiah\Prayer\Person;
 use Obadiah\Refresh\Refresh;
-use Obadiah\Request\Request;
 use Obadiah\Rota\Rota;
 use SplFileInfo;
 

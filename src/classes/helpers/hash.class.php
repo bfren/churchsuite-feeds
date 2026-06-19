@@ -3,7 +3,7 @@
 namespace Obadiah\Helpers;
 
 use Obadiah\App;
-use Obadiah\Prayer\Person;
+use Obadiah\AddressBook\Person;
 use Obadiah\Rota\Combined_Service;
 
 App::check();
@@ -29,7 +29,7 @@ class Hash
      */
     public static function person(Person $person): string
     {
-        return md5($person->get_full_name());
+        return md5(sprintf("%s-%s",$person->id, $person->get_full_name(false)));
     }
 
     /**

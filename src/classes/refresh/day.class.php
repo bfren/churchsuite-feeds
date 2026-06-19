@@ -4,13 +4,13 @@ namespace Obadiah\Refresh;
 
 use DateTimeImmutable;
 use Obadiah\App;
+use Obadiah\AddressBook\Person;
 use Obadiah\Bible\Day as Readings;
 use Obadiah\Cache\Cache;
 use Obadiah\Calendar\Event;
 use Obadiah\Config\Config as C;
 use Obadiah\Helpers\Arr;
 use Obadiah\Helpers\Psalms;
-use Obadiah\Prayer\Person;
 
 App::check();
 

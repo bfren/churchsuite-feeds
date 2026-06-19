@@ -4,6 +4,7 @@ namespace Obadiah\Prayer;
 
 use DateTimeImmutable;
 use Obadiah\App;
+use Obadiah\AddressBook\Person;
 use Obadiah\Cache\Cache;
 use Obadiah\Config\Config as C;
 use Obadiah\Helpers\Arr;

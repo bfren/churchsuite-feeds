@@ -3,11 +3,11 @@
 namespace Obadiah\ChurchSuite;
 
 use Obadiah\App;
+use Obadiah\AddressBook\Person;
 use Obadiah\Config\Config as C;
 use Obadiah\Helpers\Arr;
 use Obadiah\Helpers\Curl;
 use Obadiah\Helpers\Hash;
-use Obadiah\Prayer\Person;
 use Obadiah\Prayer\Prayer_Calendar;
 
 App::check();
@@ -28,7 +28,7 @@ class Api
      */
     public function __construct()
     {
-        $this->version = "v1";
+        $this->version = "v2";
     }
 
     /**
@@ -97,6 +97,7 @@ class Api
         foreach ($response[$kind] as $person) {
             $thumb_url = Arr::get(Arr::get(Arr::get($person, "images", []), "md", []), "url");
             $person = new Person(
+                id: Arr::get_integer($person, "id"),
                 first_name: Arr::get($person, "first_name"),
                 last_name: Arr::get($person, "last_name"),
                 is_child: $are_children,

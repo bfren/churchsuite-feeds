@@ -3,9 +3,9 @@
 namespace Obadiah\Pages\Prayer;
 
 use Obadiah\App;
+use Obadiah\AddressBook\Person;
 use Obadiah\Cache\Cache;
 use Obadiah\Helpers\Hash;
-use Obadiah\Prayer\Person;
 
 App::check();
 
